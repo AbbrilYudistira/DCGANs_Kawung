@@ -15,8 +15,8 @@ tf.keras.mixed_precision.set_global_policy('mixed_float16')
 def load_gan_models():
     try:
         # Tambahkan compile=False untuk menghindari peringatan saat memuat
-        generator = load_model('generator_final243.h5', compile=False)
-        discriminator = load_model('discriminator_final243.h5', compile=False)
+        generator = load_model('generator_final201.h5', compile=False)
+        discriminator = load_model('discriminator_final201.h5', compile=False)
         return generator, discriminator
     except Exception as e:
         st.error(f"Terjadi kesalahan saat memuat model: {e}")
